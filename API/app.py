@@ -22,7 +22,6 @@ def get_report():
         return jsonify({"error": "Forbidden"}), 403
 
     return jsonify({
-        "user_id": user_info["sub"],
         "report": {
             "battery": "89%",
             "signal": "strong",
