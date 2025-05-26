@@ -23,7 +23,6 @@ def get_report():
 
     return jsonify({
         "user_id": user_info["sub"],
-        "user_info": user_info,
         "report": {
             "battery": "89%",
             "signal": "strong",
